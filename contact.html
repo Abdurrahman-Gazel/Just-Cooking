@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>just Cooking</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    </head>
+<body>
+    
+        <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logoz.webp"></a>
+            <div class="nav-links"id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="about.html">Biz kimiz</a></li>   
+                <li><a href="recipes.html">Tüm Tarifler</a></li> 
+                <li><a href="expert.html">Tarif Gönder</a></li>  
+                <li><a href="contact.html">İletişime</a></li>
+            </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Bizimle İletişime geç</h1>
+    </section>
+
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6285.894289441377!2d32.504697826412034!3d38.025011668858504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08d17ca644997%3A0x5fdb801fa20c218c!2sSel%C3%A7uk%20University!5e0!3m2!1sen!2str!4v1624566575827!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </section>
+
+        <section class="contact-us">
+
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Selcuk Üniversitesi</h5>
+                            <p>Türkiye, Konya</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+905374274544</h5>
+                            <p>pazartesiden cumartesiye, 10:00 - 18:00</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>info@justcooking.org</h5>
+                            <p>bize sorgunuzu e-posta ile gönderin</p>
+                        </span>
+                    </div>                                
+                </div>
+            <div class="contact-col">
+
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Adınız/Soyadınız"required>
+                    <input type="email" name="email" placeholder="E-Posta Adresiniz"required>
+                    <input type="text" name="subject" placeholder="konunu gir"required>
+                    <textarea rows="8" name="message" placeholder="Mesajınız"required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Gönder</button>
+                </form>
+
+
+            </div>
+        </div>
+        </section>
+
+
+
+        </section>
+    <section class="footer">
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <p>Her hakkı saklıdır. © 2019-2021</p>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/2cdeb7e939.js"></script>
+    <script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+    </script>
+</body>
+</html>
+
